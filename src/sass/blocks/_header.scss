@@ -20,4 +20,23 @@
             margin-top: 7px;
         }
     }
+    &__phone {
+        display: block;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-decoration: none;
+        // text-align: right;
+        &:hover {
+            color:#FFFFFF;
+            text-decoration: none;
+        } 
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
 }
