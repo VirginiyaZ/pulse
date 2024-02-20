@@ -77,6 +77,31 @@ $(document).ready(function() {
     });
   });
 
-});
+  function validateForms(form){
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        }
+      },
+      messages: {
+        name: "Введите Ваше имя",
+        phone: "Введите ваш номер телефона",
+        email: {
+          required: "Введите Вашу электронную почту почту",
+          email: "Ваша электронная почта должна быть в формате name@domain.com"
+        }
+      }
+    });
+  }
+  validateForms('#consultation-form');
+  validateForms('#consultation form');
+  validateForms('#order form');
+ 
+  $('input[name=phone]').mask("+7(999) 999-99-99");
 
+});
 
