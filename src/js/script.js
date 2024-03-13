@@ -11,10 +11,10 @@ const slider = tns({
       gutter: 20,
       items: 1
     },
-    700: {
+    720: {
       gutter: 20,
     },
-    900: {
+    992: {
       items: 1
     }
   }
