@@ -6,13 +6,13 @@ const slider = tns({
   controls: false,
   nav: false,
   responsive: {
-    640: {
+    576: {
       edgePadding: 20,
       gutter: 20,
       items: 1
     },
-    720: {
-      gutter: 20,
+    767: {
+      items: 1,
     },
     992: {
       items: 1

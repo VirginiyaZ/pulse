@@ -128,6 +128,7 @@
         right: -55px;
         left: auto;
     }
+    }
 }
 .catalog {
     .title {
@@ -210,7 +211,6 @@
 @media (max-width: 767px) {
     .promo {
         min-height: 600px;
-        width: 50%;
         padding: 20px 20px 63px 20px;
         &__header {
             font-size: 24px;
@@ -225,9 +225,11 @@
             height: 20px;
         }
         &__icons {
+            justify-content: center;
+            align-items: center;
             margin-top: 45px;
             margin-bottom: 10px;
-            width: 370px;
+            width: 320px;
         }
         &__icon {
             width: 106px;
@@ -254,186 +256,88 @@
                 margin-top: 10px;
             }
         }
+        &__phone {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__logo {
+            width: 230px;
+        }
     }
+    
 } 
-.advantages {
-    .title {
-        font-size: 24px;
+    .advantages {
+        .title {
+            font-size: 24px;
+        }
+        &__wrapper {
+            margin-top: 55px;
+        }
+        &__item {
+            max-width: 200px;
+            margin: 0 10px 0 10px;
+        }
+        &__icon {
+            width: 65px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        &__descr {
+            margin-top: 24px;
+            font-size: 12px;
+        }
     }
-    &__wrapper {
-        margin-top: 55px;
+    .consultation {
+        min-height: 600px;
+        padding: 80px 0 88px 0;
+        .title {
+            margin-left: 15px;
+            font-size: 24px;
+        }
+        &__descr {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .feed-form {
+            margin-left: 15px;
+            width: 240px;
+        }
+        .button {
+            &_submit {
+                width: 100%;
+                height: 46px;
+                font-size: 14px;
+            }
+        }
     }
-    &__item {
-        max-width: 200px;
-        margin: 0 10px 0 10px;
+    .carousel {
+        .carousel-cat {
+            width: 690px;
+        }
+        padding: 70px 0;
+        &__inner {
+            width: 690px;
+            margin: 0 auto;
+            img {
+                width: 650px;
+            }
+        }
+        .prev, .next  {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -35px;
+            img {
+                width: 20px;
+                height: 30px;
+            }
+        }
+        .next  {
+            right: -35px;
+            left: auto;
+        }
     }
-    &__icon {
-        width: 65px;
-    }
-    &__subtitle {
-        margin-top: 30px;
-        font-size: 14px;
-    }
-    &__descr {
-        margin-top: 24px;
-        font-size: 12px;
 }
 
-}
-}
-//     .title {
-//         margin-top: 25px;
-//     }
-//     .menu {
-//         position: fixed;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         top: 0;
-//         left: -100%;
-//         width: 50%;
-//         height: 100vh;
-//         padding: 20px 15px;
-//         background-color: rgba(0, 0, 0, 0.8);
-//         transition: 0.6s;
-//         &_active {
-//             left: 0;
-//         }
-//         &_item {
-//             padding-right: 0;
-//             border: none;
-//             margin: 10px;
-//         }
-//         &_link {
-//             font-size: 20px;
-//         }
-//     }
-//     .hamburger {
-//         display: block;
-//         position: absolute;
-//         right: 10px;
-//         top: 30px;
-//         transform: translateY(-50%);
-//         width: 26px;
-//         height: 12px;
-//         span {
-//             display: block;
-//             height: 2px;
-//             width: 100%;
-//             background-color: #fff;
-//             margin-bottom: 2px;
-//             transition: 0.5s all;
-//             &_active {
-//                 span {
-//                     margin-bottom: -2px;
-//                     &:nth-child(1) {
-//                         transform: translateY(3px) rotate(-45deg);
-//                     }
-//                     &:nth-child(2) {
-//                         display: none;
-//                     }
-//                     &:nth-child(3) {
-//                         transform: translateY(3px) rotate(45deg);
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     .xs-hidden {
-//         display: none;
-//     }
-//     .xs-visible {
-//         display: block;
-//     }
-//     .subheader {
-//         &_phone {
-//             display: block;
-//             margin-top: 10px;
-//             color: #ffffff;
-//             font-size: 15px;
-//             font-weight: 400;
-//             text-transform: uppercase;
-//             text-align: center;
-//         }
-//         &_btn {
-//             display: block;
-//             width: 180px;
-//             height: 42px;
-//             margin: 0 auto;
-//             margin-top: 10px;
-//             text-transform: uppercase;
-//         }
-//     }
-//     .promo {
-//         &_header {
-//             line-height: 40px;
-//         }
-//     }
-// }
-
-// @media (max-width: 575px) {
-//     nav {
-//         height: 40px;
-//     }
-//     header {
-//         height: 20px;
-//     }
-//     .menu {
-//         width: 85%;
-//         &_item {
-//             width: 100%;
-//             text-align: center;
-//             padding: 5px 0;
-//         }
-//         &_link {
-//             display: block;
-//         }
-//     }
-//     .subheader {
-//         height: 55px;
-//         top: 30px;
-//         &_official {
-//             display: none;
-//         }
-//         &_logo {
-//             margin-top: 16px;
-//         }
-//         &_phone {
-//             font-size: 12px;
-//             font-weight: 400;
-//             text-transform: uppercase;
-//             margin-top: 11px;
-//         }
-//         &_btn {
-//             width: 110px;
-//             height: 22px;
-//             font-size: 10px;
-//             text-transform: uppercase;
-//             margin-top: 7px;
-//         }
-//     }
-//     .promo {
-//         min-height: 400px;
-//         padding: 93px 0 35px 0;
-//         &_descr {
-//             display: none;
-//         }
-//         &_header {
-//             font-size: 30px;
-//             padding: 0 24px;
-//             line-height: 35px;
-//         }
-//         &_subheader {
-//             font-size: 20px;
-//             margin-top: 33px;
-//             padding: 0 10px;
-//             line-height: 30px;
-//         }
-//         &_btn {
-//             width: 210px;
-//             height: 50px;
-//             margin-top: 72px;
-//         }
-//     }
-// }
-}
