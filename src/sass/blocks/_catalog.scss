@@ -160,6 +160,14 @@
                     left: -14px;
                     top: 8px;
                 }
+                &.no-bullet {
+                    list-style-type: none; // Remove bullet point
+                    padding-left: 0;       // Optional: Remove any left padding
+        
+                    &:before {
+                        content: none; // Remove the custom bullet before element
+                    }
+                }
             }
         }
         &__back {
